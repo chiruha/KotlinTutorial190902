@@ -1,8 +1,10 @@
+package chapter01
+
 fun main() {
-    val result = sum(10,20)
+    val result = sum(10, 20)
     println(result)
 
-    val result2 = sum2(100,200)
+    val result2 = sum2(100, 200)
     println(result2)
 }
 

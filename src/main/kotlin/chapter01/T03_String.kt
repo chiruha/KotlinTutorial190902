@@ -1,3 +1,5 @@
+package chapter01
+
 fun main() {
     val str1: Char = 'c'
     val str2: String = "C"
@@ -12,7 +14,7 @@ fun main() {
     val myVal = 10
     println("hello $myVal")
     println("hi ${myVal+20}") // 중괄호가 먼저 실행됨
-    println("hello ${sum(10,11)}")
+    println("hello ${sum(10, 11)}")
 
     println(getLength(100))
     println(getLength("hello world"))
