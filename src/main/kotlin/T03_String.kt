@@ -13,4 +13,14 @@ fun main() {
     println("hello $myVal")
     println("hi ${myVal+20}") // 중괄호가 먼저 실행됨
     println("hello ${sum(10,11)}")
+
+    println(getLength(100))
+    println(getLength("hello world"))
+}
+
+fun getLength(obj: Any):Int {
+    if(obj is String) { // 스마트 캐스트
+        return obj.length
+    }
+    return 0
 }
