@@ -1,4 +1,4 @@
-package chapter02
+package chapter03
 
 // 고차함수 : 매개변수로 함수를 전달받거나 함수를 반환하는 함수
 
@@ -28,8 +28,8 @@ fun hoFun3(str: String): (Int, Int) -> Int {
 
 
 fun main() {
-    hoFun(10) { x->x*10} // hoFun(10, {x->x*10})에서 마지막 인수가 함수 타입인 경우 괄호 생략가능
-    hoFun2{ x-> x*15 }
+    hoFun(10) { x -> x * 10 } // hoFun(10, {x->x*10})에서 마지막 인수가 함수 타입인 경우 괄호 생략가능
+    hoFun2 { x -> x * 15 }
 
     val result = hoFun3("+")
     val value = result(10, 2)

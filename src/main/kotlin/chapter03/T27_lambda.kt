@@ -1,4 +1,4 @@
-package chapter02
+package chapter03
 
 // 익명함수
 fun sum(a: Int, b:Int): Int {
@@ -22,9 +22,9 @@ val temp = ::sum // 리플렉션
 val sum1 = {a:Int, b:Int -> a+b}
 
 fun main() {
-    val res = sum(10,20)
+    val res = sum(10, 20)
     println("res :: ${res}")
-    println("sum2 :: ${sum(11,13)}")
-    println("temp :: ${temp(11,15)}")
+    println("sum2 :: ${sum(11, 13)}")
+    println("temp :: ${temp(11, 15)}")
     println("tempFunLambda :: ${tempFunLambda()}")
-    println("funLambda :: ${tempLambda2(20,9)}")}
+    println("funLambda :: ${tempLambda2(20, 9)}")}

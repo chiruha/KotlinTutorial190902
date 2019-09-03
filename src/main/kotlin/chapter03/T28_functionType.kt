@@ -1,4 +1,4 @@
-package chapter02
+package chapter03
 
 // 함수타입
 
